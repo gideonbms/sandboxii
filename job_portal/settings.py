@@ -145,16 +145,15 @@ USE_TZ = True
 #MEDIA_URL = "/media/"
 #MEDIA_ROOT = os.path.join(BASE_DIR, "media")STATIC_URL = '/static/'
 
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240 # higher than the count of fields
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
 
 
 
